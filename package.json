@@ -1,0 +1,29 @@
+{
+  "name": "webpack-howto-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bundle-loader": "^0.5.*",
+    "css-loader": "^0.9.*",
+    "file-loader": "^0.8.*",
+    "jsx-loader": "^0.12.*",
+    "sass-loader": "^0.3.*",
+    "style-loader": "^0.8.*",
+    "url-loader": "^0.5.*",
+    "webpack-dev-server": "^1.6.*"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "node-bourbon": "^1.2.3",
+    "react": "^0.12.*",
+    "react-router": "^0.10.*",
+    "reflux": "^0.1.15"
+  }
+}

@@ -1,4 +1,5 @@
 var bourbon = require('node-bourbon');
+var BowerWebpackPlugin = require("bower-webpack-plugin");
 
 module.exports = {
   entry: './modules/main.js',
@@ -13,5 +14,6 @@ module.exports = {
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' } // inline base64 URLs for <=8k images, direct URLs for the rest
     ]
-  }
+  },
+  plugins: [new BowerWebpackPlugin()]
 };
